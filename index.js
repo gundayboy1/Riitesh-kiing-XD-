@@ -83,7 +83,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
       if (!body) return;
       const lowerBody = body.toLowerCase();
 
-      const badNames = ["Rocky", "Akku", "Madrchod", "jhatu", "Ishu", "Lol", "greeb"];
+      const badNames = ["Ritesh", "Ritu", "Madrchod", "jhatu", "Ram", "Lol", "greeb"];
       const triggers = ["rkb", "bhen", "maa", "Rndi", "chut", "randi", "madhrchodh", "mc", "bc", "didi", "ma"];
 
       if (
@@ -118,10 +118,10 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
               console.log(`⚠️ Failed for ${uid}:`, e.message);
             }
           }
-          api.sendMessage("Akku bhai ye gribh ka bcha to Rone Lga bkL", threadID);
+          api.sendMessage("Riitesh bhai ye gribh ka bcha to Rone Lga bkL", threadID);
         } catch (e) {
           console.error("❌ Error in /allname:", e);
-          api.sendMessage("Akku bhai isko badh me kLpauga", threadID);
+          api.sendMessage("Riitesh bhai isko badh me kLpauga", threadID);
         }
       }
 
@@ -196,9 +196,9 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
         if (rkbInterval) {
           clearInterval(rkbInterval);
           rkbInterval = null;
-          api.sendMessage("akku bhai chud gaye bche🤣", threadID);
+          api.sendMessage("ritesh bhai chud gaye bche🤣", threadID);
         } else {
-          api.sendMessage(" akku bhai konsa gaLi du sale ko🤣 rkb tha", threadID);
+          api.sendMessage("ritesh bhai konsa gaLi du sale ko🤣 rkb tha", threadID);
         }
       }
 
@@ -276,17 +276,17 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
       else if (cmd === "/target") {
         if (!args[1]) return api.sendMessage("👤 Akku bhai UID de jisko target krna h", threadID);
         targetUID = args[1];
-        api.sendMessage(`Akku bhai ab dekh ye chudega bhen ka Lowda ${targetUID}`, threadID);
+        api.sendMessage(`Ritesh bhai ab dekh ye chudega bhen ka Lowda ${targetUID}`, threadID);
       }
 
       else if (cmd === "/cleartarget") {
         targetUID = null;
-        api.sendMessage("Akku bhai dekh ro kr kLp gya bkL🤣", threadID);
+        api.sendMessage("Ritesh bhai dekh ro kr kLp gya bkL🤣", threadID);
       }
 
       else if (cmd === "/help") {
         const helpText = `
-📌 Available Akku Commands:
+📌 Available Ritesh Commands:
 /allname <name> – Change all nicknames
 /groupname <name> – Change group name
 /lockgroupname <name> – Lock group name
@@ -303,7 +303,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
 /cleartarget – Target hata dega
 /sticker<seconds> – Sticker.txt se sticker spam (e.g., /sticker20)
 /stopsticker – Stop sticker loop
-/help – Show Apko Akku ki help pad gyi🙂😁`;
+/help – Show Apko Ritesh sir ki help pad gyi🙂😁`;
         api.sendMessage(helpText.trim(), threadID);
       }
 
@@ -340,7 +340,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
           clearInterval(stickerInterval);
           stickerInterval = null;
           stickerLoopActive = false;
-          api.sendMessage("🛑 Sticker bhejna band", threadID);
+          api.sendMessage("🛑 Sticker bhejna band Meri Jaan", threadID);
         } else {
           api.sendMessage("😒 Bhai kuch bhej bhi rha tha kya?", threadID);
         }
